@@ -1,5 +1,5 @@
 var teacherfolders = {};
-var templateId = '1csy2kO0-NymbIC23gWnhpCY81G9CJrYpHWfgoS3HwUw';
+var templateId = '1csy2kO0-NymbIC23gWnhpCY81G9CJrYpHWfgoS3HwUw'; //template id for google form
 
 
 function onOpen(e) {
