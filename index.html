@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
+    
+  </head>
+  <body style="padding-top:15px">
+  
+    <div class='container'>
+    
+    
+      
+      <div class='form'>
+        <div class="form-group">
+          <label for="projectName" class='col-sm-2 control-label'>Project Name</label>
+          <div class='col-sm-10'>
+            <input type="text" class="form-control" name="projectName" id="projectName" placeholder="SFS Project Fall 2016">
+          </div>
+        </div>
+        <button id='projectNameButton' class="btn btn-default">Set Name</button>
+      </div>
+        
+      
+ 
+    </div>
+    
+    <script type='text/javascript'>
+      
+      $('#projectNameButton').click(function(){
+      console.log($('#projectName').val());
+        google.script.run
+          .setTitle($('#projectName').val());
+      });
+    </script>
+  </body>
+</html>
+
+
